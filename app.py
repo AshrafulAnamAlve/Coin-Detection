@@ -34,7 +34,9 @@ def midpoint_circle(img, cx, cy, r, color):
         else:
             y -= 1
             p = p + 2 * x - 2 * y + 1
-            # Bresenham Line Algorithm
+
+
+# Bresenham Line Algorithm
 def bresenham_line(img, x1, y1, x2, y2, color):
     dx = abs(x2 - x1)
     dy = abs(y2 - y1)
@@ -110,7 +112,8 @@ if file is not None:
 
     count = 0
     output = image.copy()
-        for cnt in contours:
+
+    for cnt in contours:
         if cv2.contourArea(cnt) > min_area:
             count += 1
 
